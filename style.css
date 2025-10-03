@@ -1,29 +1,48 @@
 body {
-    color: #111111;
+    color: #FFFFFF;                 
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #111111;     
+    font-family: "Bebas Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
 }
+
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 0;
+    background-color: #111111;      
+    color: #E10600;                 
+    padding: 20px 0;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFD300; 
 }
+
 footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #3C4A3E;      
+    color: #FFFFFF;                 
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-top: 2px solid #E10600; 
+}
+
+a {
+    color: #FFD300;                 
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E10600;              
 }
 
 .bebas-neue-regular {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
 }
+
 .bebas-neue-bold {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
 }
