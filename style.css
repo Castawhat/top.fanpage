@@ -46,3 +46,14 @@ a:hover {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 700;
 }
+
+button {
+    background-color: #E10600;      
+    color: #FFFFFF;                 
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

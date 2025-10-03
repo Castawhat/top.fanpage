@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fanpage</title>
+<link rel="stylesheet" href="/style.css">
+
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<pre>
+    i made my first escape attempt today.
+    i almost made it out, but i was caught.
+    they took me to nico, or blurryface as he calls himself. the head bishop of dema.
+    he questioned me, but i didn't say anything.
+    he told me that escape is impossible, that i will never leave dema.
+    he also smeared me, i don't know why. i have these black marks on my neck now.
+</pre>
+</body>
+<footer>
+<button onclick="window.location.href='three.html/'">Three</button>
+</footer>
+</html>
+<script>
+  const PASSWORD = "DST. SARCAVER"; 
+
+  function showContent() {
+    document.body.style.display = '';
+  }
+
+  function hideContent() {
+    document.body.style.display = 'none';
+  }
+
+  hideContent();
+  let attempts = 0;
+  while (attempts < 3) {
+    const input = prompt("Enter the password from the previous page to access the next puzzle:").toUpperCase();
+    if (input === PASSWORD) {
+      showContent();
+      break;
+    } else {
+      attempts++;
+      alert("Nuh Uh.");
+    }
+  }
+  if (attempts === 2) {
+    alert("Your access has been denied.");
+  }
+</script>

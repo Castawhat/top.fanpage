@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fanpage</title>
+<link rel="stylesheet" href="/style.css">
+
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<pre>
+    yesterday i came face to face with the bishops.
+    they didn't recognize me, but i recognized them.
+    i've seen them before, in the annual assemblage of the glorified.
+
+    they are the ones who keep me in this cycle.
+    they are the ones who control everything.
+    we are seperated into districts, each ruled by a bishop.
+    i am from DST. SARCAVER, ruled by sarcaver.
+
+    i learnt one thing i need to know today.
+    east is up.
+    i need to remember that.
+    they rotate the directions in dema, so its harder to escape.
+    east is the way out.
+</pre>
+</body>
+<footer>
+<button onclick="window.location.href='three.html/'">Three</button>
+</footer>
+</html>
+<script>
+  const PASSWORD = "ESCAPE"; 
+
+  function showContent() {
+    document.body.style.display = '';
+  }
+
+  function hideContent() {
+    document.body.style.display = 'none';
+  }
+
+  hideContent();
+  let attempts = 0;
+  while (attempts < 3) {
+    const input = prompt("Enter the password from the previous page to access the next puzzle:").toUpperCase();
+    if (input === PASSWORD) {
+      showContent();
+      break;
+    } else {
+      attempts++;
+      alert("Nuh Uh.");
+    }
+  }
+  if (attempts === 2) {
+    alert("Your access has been denied.");
+  }
+</script>
